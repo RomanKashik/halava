@@ -1384,7 +1384,7 @@ p {
   width: 100%;
   max-width: 320px;
   max-height: 86px;
-  padding: 25px 0;
+  padding: 35px 45px;
   text-align: center;
   border-radius: 43px;
   border: none;
@@ -1401,18 +1401,6 @@ p {
   position: relative;
   top: 0;
   cursor: pointer;
-}
-
-.btn .Прямоугольник_3 {
-  background-image: -ms-linear-gradient(90deg, #fa862a 0%, #ffdd9a 100%, #0089ff 100%);
-  -webkit-box-shadow: 0px 3px 0px 0px #d6762a01;
-  box-shadow: 0px 3px 0px 0px #d6762a01;
-  position: absolute;
-  left: 455px;
-  top: 3165px;
-  width: 320px;
-  height: 86px;
-  z-index: 249;
 }
 
 .btn:after {
@@ -1440,6 +1428,10 @@ p {
 
 .btn--video {
   margin-top: 30px;
+}
+
+.btn--p {
+  padding: 28px 10px;
 }
 
 .main-title {
@@ -1610,6 +1602,7 @@ p {
   background-color: #1c1c1c;
   background-size: cover;
   padding: 23px 0 75px;
+  height: 140vh;
 }
 
 .navigation {
@@ -1838,7 +1831,7 @@ p {
 /*!Стили секции бизнес!*/
 
 .business {
-  padding: 30px 0;
+  padding: 30px 0 105px;
   position: relative;
 }
 
@@ -1849,11 +1842,11 @@ p {
 .bs-bg:before {
   content: "";
   position: absolute;
-  top: 427px;
+  top: 527px;
   right: 0px;
   background: url(../img/business/book1.png) no-repeat;
   background-size: cover;
-  width: 105vw;
+  width: 107vw;
   height: 52vh;
 }
 
@@ -1915,9 +1908,9 @@ p {
 
 .strategy-info .strategy__desr {
   font-family: "tt_commonsregular";
-  font-size: 18px;
+  font-size: 19px;
   color: #ffffff;
-  line-height: 1.167;
+  line-height: 31px;
   text-align: center;
   padding-bottom: 30px;
 }
@@ -1970,7 +1963,7 @@ p {
 
 .strategy-dir {
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
   left: 15px;
 }
 
@@ -1989,7 +1982,7 @@ p {
 .strategy-dir .dir_name:after {
   content: attr(data-name);
   position: absolute;
-  top: 15px;
+  top: 17px;
   left: 32px;
   font-family: "tt_commonsmedium";
   font-size: 18px;
@@ -2179,6 +2172,10 @@ p {
   border-radius: 90px;
   cursor: pointer;
   z-index: 1;
+}
+
+.owl-carousel.owl-carousel-result .owl-stage-outer {
+  min-height: 490px;
 }
 
 .owl-carousel.owl-carousel-result .owl-nav {
@@ -2371,9 +2368,31 @@ p {
   height: 36px;
 }
 
+@media screen and (min-width: 320px) {
+  .regalia-bg:before {
+    content: "";
+    position: absolute;
+    background: url("../img/header/iphone.png") no-repeat left top;
+    background-size: cover;
+    width: 286px;
+    height: 466px;
+    -webkit-transform: translate(-75px, 166px);
+    -ms-transform: translate(-75px, 166px);
+    transform: translate(-75px, 166px);
+  }
+}
+
 @media screen and (min-width: 375px) {
   .card-wrap .card__img {
     left: 40px;
+  }
+
+  .header {
+    height: 125vh;
+  }
+
+  .owl-carousel.owl-carousel-result .owl-stage-outer {
+    min-height: 550px;
   }
 
   .green-block {
@@ -3287,9 +3306,19 @@ p {
   }
 }
 
+@media screen and (min-width: 767px) {
+  .header {
+    height: 100%;
+  }
+
+  .regalia-bg:before {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .btn--video {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   .card-wrap--table {
@@ -3348,6 +3377,7 @@ p {
 
   .strategy-dir {
     left: 135px;
+    bottom: 0;
   }
 
   .mapa {
@@ -3383,6 +3413,10 @@ p {
   .heading__content .content__income span {
     display: inline;
     padding-bottom: 0;
+  }
+
+  .owl-carousel.owl-carousel-result .owl-stage-outer {
+    min-height: 652px;
   }
 
   .owl-carousel.owl-carousel-result .owl-dots {
@@ -4194,6 +4228,10 @@ p {
 }
 
 @media screen and (min-width: 992px) {
+  .btn--video {
+    margin-top: 0px;
+  }
+
   .main-title--modify {
     text-align: left;
   }
@@ -5138,8 +5176,9 @@ p {
     background-size: cover;
     width: 286px;
     height: 466px;
-    bottom: -126px;
-    left: -407px;
+    bottom: 37px;
+    left: -330px;
+    display: block;
   }
 
   .bs-bg:before {
@@ -6068,5 +6107,44 @@ p {
     display: -webkit-inline-box !important;
     display: -ms-inline-flexbox !important;
     display: inline-flex !important;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .bs-bg:before {
+    content: "";
+    position: absolute;
+    top: 232px;
+    right: -24px;
+    background: url(../img/business/book1.png) no-repeat;
+    background-size: cover;
+    width: 88vw;
+    height: 77vh;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .bs-bg:before {
+    content: "";
+    position: absolute;
+    top: 220px;
+    left: 0;
+    background: url(../img/business/book1.png) no-repeat;
+    background-size: cover;
+    width: 97vw;
+    height: 81vh;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-height: 850px) and (orientation: portrait) {
+  .bs-bg:before {
+    content: "";
+    position: absolute;
+    top: 332px;
+    right: -24px;
+    background: url(../img/business/book1.png) no-repeat;
+    background-size: cover;
+    width: 88vw;
+    height: 77vh;
   }
 }
